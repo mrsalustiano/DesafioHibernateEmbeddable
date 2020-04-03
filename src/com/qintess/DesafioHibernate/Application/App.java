@@ -12,7 +12,7 @@ import com.qintess.DesafioHibernate.Model.Venda;
 import com.qintess.DesafioHibernate.Model.VendaItens;
 
 public class App {
-	private static int estoqueAtual = 0;
+
 
 	public static void main(String[] args) throws Exception {
 
@@ -79,8 +79,8 @@ public class App {
 		daoFornecedorHasProduto.salvar(fornecedorHasProduto3);
 		daoFornecedorHasProduto.salvar(fornecedorHasProduto4);
 		
-		Venda venda1 = new Venda(1, 2, 1, Timestamp.valueOf(LocalDateTime.now()));
-		Venda venda2 = new Venda(2, 5, 2, Timestamp.valueOf(LocalDateTime.now()));
+		Venda venda1 = new Venda(1, 0, 1, Timestamp.valueOf(LocalDateTime.now()));
+		Venda venda2 = new Venda(2, 0, 2, Timestamp.valueOf(LocalDateTime.now()));
 		
 		daoVenda.salvar(venda1);
 		daoVenda.salvar(venda2);
